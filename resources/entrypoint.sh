@@ -1,5 +1,5 @@
 #!/bin/bash
-
+  
 ### wait for a directory to exist or 60 seconds timeout
 function waitForDeploy {
     waitfordir="$1"

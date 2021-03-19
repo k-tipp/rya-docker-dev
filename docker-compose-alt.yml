@@ -3,8 +3,7 @@ version: '3.1'
 services:
   rya:
     build: 
-      context: ./dockerfiles/rya
-      dockerfile: Dockerfile
+      context: .
     ports:
       - 8080:8080
       - 2181:2181

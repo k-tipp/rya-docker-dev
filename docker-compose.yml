@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   rya:
-    image: ktipp/rya-docker-dev:v1.0.0
+    image: ktipp/rya-docker-dev:latest
     ports:
       - 8080:8080
       - 2181:2181
