@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  rya:
+    build: 
+      context: ./dockerfiles/rya
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+      - 2181:2181
+    environment:
+      ZOOKEEEPERS: rya
+      ZOO_MY_ID: 1
+    networks:
+      - rya_dev
+
+networks:
+  rya_dev:
