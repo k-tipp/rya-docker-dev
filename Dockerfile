@@ -91,8 +91,8 @@ RUN /bin/bash -c 'mkdir --parents /data; \
 
 COPY resources/entrypoint.sh entrypoint.sh
 
+RUN /bin/bash -c 'chmod a+rwX ./entrypoint.sh'
+
 EXPOSE 8080 2181
 
-ENTRYPOINT ["./entrypoint.sh"]
-
-# ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ["./entrypoint.sh"]
