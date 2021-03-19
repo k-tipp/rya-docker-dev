@@ -1,2 +1,4 @@
 # rya-docker-dev
-Unofficial dockerfile to build a container running Apache Rya for development purposes.
+Unofficial container running Apache Rya in a development environment.
+
+**NOTE: This dockerfile contains unsafe configurations.**
